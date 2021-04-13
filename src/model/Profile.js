@@ -4,7 +4,7 @@ module.exports = {
     async get() {
         const db = await Database();
 
-        const data = await db.run(`SELECT * FROM profile`);
+        const data = await db.get(`SELECT * FROM profile`);
 
         await db.close();
 
